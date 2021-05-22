@@ -4,7 +4,7 @@ OS Environment : Linux
 
 So that my shell looks like real shell, I included username, hostname and print working directory and modified each color.
 
-<Built-in command>
+// Built-in command
 
 1) cd
  If input is "cd [directory path]", you can change directory. 
@@ -12,7 +12,7 @@ So that my shell looks like real shell, I included username, hostname and print 
 2) exit
  If input is "exit", shell is terminated.
 
-<External command>
+// External command
 
 1) ls
  print list
