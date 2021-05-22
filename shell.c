@@ -82,40 +82,40 @@ int main(void)
                 args[0] = "/bin/ls";
                 args[1] = arg;
             }	    
-	    	else if (strcmp(arg, "pwd") == 0){ // pwd
-	    		args[0] = "/bin/pwd";
-	    		args[1] = NULL;
-	    	}
-	    	else if (strcmp(arg, "date") == 0){ // date
-	    		args[0] = "/bin/date";
-	    		args[1] = NULL;
-	    	}
-	    	else if (strcmp(arg, "echo") == 0){ // echo
-	    	    arg = strtok(NULL, " ");
-	    	    args[0] = "/bin/echo";
-	    	    args[1] = arg;
-	    	}
-	    	else if (strcmp(arg, "vi") == 0){ // vi
-	    	    arg = strtok(NULL, " ");
-	    	    args[0] = "/usr/bin/vi";
-	    	    args[1] = arg;
-	    	}    	
-	    	else if (strcmp(arg, "cat") == 0){ // cat
-	    	    arg = strtok(NULL, " ");
-	    	    args[0] = "/bin/cat";
-	    	    args[1] = arg;
-	    	} 
-	    	
-	    	ret = execve(args[0], args, NULL);
-	    	if (strcmp(arg, "clear") == 0){ // clear
-	    	    system("clear");
-	    	    ret = 0;
-	    	}
-	    	
-	    	if (ret < 0) {
-	    	    fprintf(stderr, "execve failed\n");   
-	            return 1;
-            	}
+            else if (strcmp(arg, "pwd") == 0){ // pwd
+                args[0] = "/bin/pwd";
+                args[1] = NULL;
+            }
+            else if (strcmp(arg, "date") == 0){ // date
+                args[0] = "/bin/date";
+                args[1] = NULL;
+            }
+            else if (strcmp(arg, "echo") == 0){ // echo
+                arg = strtok(NULL, " ");
+                args[0] = "/bin/echo";
+                args[1] = arg;
+            }
+            else if (strcmp(arg, "vi") == 0){ // vi
+                arg = strtok(NULL, " ");
+                args[0] = "/usr/bin/vi";
+                args[1] = arg;
+            }    	
+            else if (strcmp(arg, "cat") == 0){ // cat
+                arg = strtok(NULL, " ");
+                args[0] = "/bin/cat";
+                args[1] = arg;
+            }
+            
+            ret = execve(args[0], args, NULL);
+            if (strcmp(arg, "clear") == 0){ // clear
+                system("clear");
+                ret = 0;
+            }
+            
+            if (ret < 0) {
+                fprintf(stderr, "execve failed\n");   
+                return 1;
+            }
         }
     }
     return 0;
