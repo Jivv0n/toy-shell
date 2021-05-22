@@ -28,6 +28,6 @@ So that my shell looks like real shell, I included username, hostname and print 
 
 3) echo prints just one word without word spacing.
 
-4) "clear" operates normally, but it can work through not exec system call but system function. If I use exec system, there is a error like "TERM environment variable not set." 
+4) "clear" operates normally, but it can work through not exec system call but system function. When I used exec system, there was a error like "TERM environment variable not set." 
 
 
