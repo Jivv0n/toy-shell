@@ -6,28 +6,19 @@ So that my shell looks like real shell, I included username, hostname and print 
 
 // Built-in command
 
-1) cd
- If input is "cd [directory path]", you can change directory. 
+1) cd : If input is "cd [directory path]", you can change directory. 
 
-2) exit
- If input is "exit", shell is terminated.
+2) exit : If input is "exit", shell is terminated.
 
 // External command
 
-1) ls
- print list
-2) pwd
- print working directory
-3) date
- show urrent time
-4) echo
- echo [...] : print ...
-5) vi
- vi [file name] : open file
-6) cat
- cat [file name] : print file on shell
-7) clear
- clear shell
+1) ls -> print list
+2) pwd -> print working directory
+3) date -> show current time
+4) echo -> echo [...] : print ...
+5) vi -> vi [file name] : open file
+6) cat -> cat [file name] : print file on shell
+7) clear -> clear shell
 
 <Limitations & Problems>
 
