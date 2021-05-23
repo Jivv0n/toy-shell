@@ -12,7 +12,7 @@ So that my shell looks like real shell, I included username, hostname and print 
 
 // External command
 
-1) ls -> print list
+1) ls [ ] -> print list with option [ ]
 2) pwd -> print working directory
 3) date -> show current time
 4) echo -> echo [...] : print ...
